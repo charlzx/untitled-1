@@ -35,6 +35,9 @@ a {
    outline: 0;
    box-shadow: none;
 }
+.navbar-toggler {
+   padding: .25rem 0;
+}
 .dropdown-large{ 
    padding:1rem; 
 }
@@ -128,7 +131,7 @@ a {
    .navbar {
       padding: 20px;
    }
-   
+
    .dropdown-large{
       min-width: auto;
    }
@@ -140,15 +143,18 @@ a {
 }
 
 @media all and (max-width: 991px) {
+   .nav-menu {
+      width: auto;
+   }
    .navbar {
       padding-left: 2.5%;
       padding-right: 2.5%;
    }
-   .collapse {
-      min-height: 100vh;
-   }
-      .nav-menu {
-         border: 0;
+   // .collapse {
+   //    min-height: 100vh;
+   // }
+   .nav-menu {
+      border: 0;
       padding: 20px 0;
    }
    .navbar-nav .nav-link {
