@@ -144,8 +144,11 @@ a {
       padding-left: 2.5%;
       padding-right: 2.5%;
    }
-   .nav-menu {
-      border: 0;
+   .collapse {
+      min-height: 100vh;
+   }
+      .nav-menu {
+         border: 0;
       padding: 20px 0;
    }
    .navbar-nav .nav-link {
