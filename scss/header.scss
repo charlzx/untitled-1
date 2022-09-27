@@ -150,9 +150,6 @@ a {
       padding-left: 2.5%;
       padding-right: 2.5%;
    }
-   // .collapse {
-   //    min-height: 100vh;
-   // }
    .nav-menu {
       border: 0;
       padding: 20px 0;
@@ -166,6 +163,11 @@ a {
       margin-top: 40px;
    }
 
+   #navbar-content {
+      min-height: calc(100vh - 300px);
+   }
+
+   
    #navbar-two {
       border-top: 1px solid rgba(236, 221, 221, 0.479);
       width: 100%;
