@@ -26,6 +26,9 @@ a {
    text-decoration: none;
 }
 
+.nav-link {
+   font-weight: bold;
+}
 
 .navbar-light .navbar-toggler {
    border: 0;
@@ -165,10 +168,21 @@ a {
    }
 
    #navbar-content {
-      min-height: calc(100vh - 300px);
+      // min-height: calc(100vh - 300px);
+      margin-bottom: 40px;
    }
 
-   
+   #main_nav {
+      background: #fff;
+      position: absolute;
+      padding: 0 5%;
+      top: 39.5px;
+      right: 0;
+      left: 0;
+      min-height: 100%;
+      transition: .85s ease;
+   }
+
    #navbar-two {
       border-top: 1px solid rgba(236, 221, 221, 0.479);
       width: 100%;

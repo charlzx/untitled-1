@@ -1,6 +1,4 @@
-@use 'config' as *;
-
-body {
-   background-color: rgba(182, 182, 66, 0.521);
-   color: red;
+.hero-section {
+   display: grid;
+   grid-template-columns: 1fr .85fr;
 }

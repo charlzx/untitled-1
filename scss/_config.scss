@@ -1,3 +1,4 @@
+// font
 @font-face {
    font-family: 'BR Firma';
    src: url('../fonts/BR\ Firma.woff2') format('woff2'),
@@ -6,4 +7,12 @@
    font-style: normal;
 }
 
-$br-firma: 'BR Firma';
+$br-firma: 'BR Firma', arial;
+
+// colors
+$white: #ffffff;
+$blue-1: #6c82a3;
+$blue-2: #0066f5;
+$blue-3: #022bb999;
+$blue-4: #022b69;
+$blue-5: #0228697a;

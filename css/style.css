@@ -1,10 +1,1 @@
-@font-face {
-  font-family: "BR Firma";
-  src: url("../fonts/BR Firma.woff2") format("woff2"), url("../fonts/BR Firma.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-body {
-  background-color: rgba(182, 182, 66, 0.521);
-  color: red;
-}
+@font-face{font-family:"BR Firma";src:url("../fonts/BR Firma.woff2") format("woff2"),url("../fonts/BR Firma.woff") format("woff");font-weight:normal;font-style:normal}.hero-section{display:grid;grid-template-columns:1fr .85fr}*{font-family:"BR Firma",arial}body{background-color:#fff;color:#022b69}body>div{padding:0 20px}
