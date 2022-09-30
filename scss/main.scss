@@ -1,4 +1,78 @@
+@use 'config' as *;
+
 .hero-section {
    display: grid;
-   grid-template-columns: 1fr .85fr;
+   grid-template-columns: .75fr 1fr;
+   grid-gap: 10px; gap: 10px;
+
+   section:first-child {
+      img {
+         width: 100%;
+      }
+   }
+
+   section:last-child {
+      position: relative;
+
+      h1 {
+         font-size: 4.5rem;
+         font-weight: bold;
+      }
+
+      p {
+         color: $midnight-blue-l
+      }
+
+      form {
+         input {
+            padding: 10px 15px;
+            border-radius: 7.5px;
+
+            &[type="email"], &[type="text"] {
+               border: 1px solid $midnight-blue-l;
+               width: 300px;
+               margin-right: 10px;
+
+               &::placeholder {
+                  color: $midnight-blue-l;
+               }
+            }
+
+            &[type="submit"] {
+               color: $white;
+               background-color: $ribbon-blue;
+               border: 1px solid $ribbon-blue;
+               padding: 10px 20px;
+               box-shadow: $shadow;
+            }
+         }
+      }
+
+      .app-links {
+         display: none;
+
+         a > img {
+            width: 125px;
+         }
+      }
+
+      .license {
+         display: flex;
+         align-items: center;
+         position: absolute;
+         bottom: 0;
+
+         img {
+            width: auto;
+            height: 15px;
+         }
+
+         p {
+            font-size: 80%;
+            text-transform: uppercase;
+            color: $midnight-blue;
+            margin-bottom: 0;
+         }
+      }
+   }
 }
