@@ -73,10 +73,13 @@ a {
    background-color: $white;
    border: 1px solid $gray-l;
    position: absolute;
+   width: -webkit-max-content;
+   width: -moz-max-content;
    width: max-content;
    margin-top: 30px;
    padding: 40px;
    border-radius: 5px;
+   grid-template-columns: -webkit-max-content -webkit-max-content;
    grid-template-columns: max-content max-content;
    display: none;
    overflow: hidden;
@@ -136,6 +139,8 @@ a {
 #navbar-two {
    display: flex;
    align-items: center;
+   width: -webkit-fit-content;
+   width: -moz-fit-content;
    width: fit-content;
    
    .login {
@@ -234,7 +239,8 @@ a {
    #navbar-logo2 {
       margin-top: 63.25px;
       display: block;
-      filter: brightness(0) invert(1);
+      -webkit-filter: brightness(0) invert(1);
+              filter: brightness(0) invert(1);
    }
 
    // navbar toggle that displays when mobile hamburger is clicked
@@ -243,7 +249,8 @@ a {
       right: 0;
       top: 58.25px;
       padding-right: 2.5%;
-      filter: brightness(0) invert(1);
+      -webkit-filter: brightness(0) invert(1);
+              filter: brightness(0) invert(1);
       // z-index: 20;
    }
 

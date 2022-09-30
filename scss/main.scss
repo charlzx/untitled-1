@@ -33,6 +33,22 @@
                width: 300px;
                margin-right: 10px;
 
+               &::-webkit-input-placeholder {
+                  color: $midnight-blue-l;
+               }
+
+               &::-moz-placeholder {
+                  color: $midnight-blue-l;
+               }
+
+               &:-ms-input-placeholder {
+                  color: $midnight-blue-l;
+               }
+
+               &::-ms-input-placeholder {
+                  color: $midnight-blue-l;
+               }
+
                &::placeholder {
                   color: $midnight-blue-l;
                }
