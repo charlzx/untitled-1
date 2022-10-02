@@ -1,10 +1,204 @@
+@import url("http://fonts.cdnfonts.com/css/br-firma");
 @font-face {
-  font-family: "BR Firma";
+  font-family: "BR Firma sub";
   src: url("../fonts/BR Firma.woff2") format("woff2"), url("../fonts/BR Firma.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+.hero-section {
+  display: grid;
+  grid-template-columns: 0.75fr 1fr;
+  grid-gap: 10px;
+  gap: 10px;
+}
+.hero-section section:first-child img {
+  width: 100%;
+}
+.hero-section section:last-child {
+  position: relative;
+}
+.hero-section section:last-child h1 {
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+.hero-section section:last-child p {
+  color: #022b6999;
+}
+.hero-section section:last-child form input {
+  padding: 10px 15px;
+  border-radius: 7.5px;
+}
+.hero-section section:last-child form input[type=email], .hero-section section:last-child form input[type=text] {
+  border: 1px solid #022b6999;
+  width: 300px;
+  margin-right: 10px;
+}
+.hero-section section:last-child form input[type=email]::-webkit-input-placeholder, .hero-section section:last-child form input[type=text]::-webkit-input-placeholder {
+  color: #022b6999;
+}
+.hero-section section:last-child form input[type=email]::-moz-placeholder, .hero-section section:last-child form input[type=text]::-moz-placeholder {
+  color: #022b6999;
+}
+.hero-section section:last-child form input[type=email]:-ms-input-placeholder, .hero-section section:last-child form input[type=text]:-ms-input-placeholder {
+  color: #022b6999;
+}
+.hero-section section:last-child form input[type=email]::-ms-input-placeholder, .hero-section section:last-child form input[type=text]::-ms-input-placeholder {
+  color: #022b6999;
+}
+.hero-section section:last-child form input[type=email]::placeholder, .hero-section section:last-child form input[type=text]::placeholder {
+  color: #022b6999;
+}
+.hero-section section:last-child form input[type=submit] {
+  color: #ffffff;
+  background-color: #0066f5;
+  border: 1px solid #0066f5;
+  padding: 10px 20px;
+  box-shadow: 0px 18px 23px -7px rgba(0, 0, 0, 0.164);
+}
+.hero-section section:last-child .app-links {
+  display: none;
+}
+.hero-section section:last-child .app-links a > img {
+  width: 125px;
+}
+.hero-section section:last-child .license {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+.hero-section section:last-child .license img {
+  width: auto;
+  height: 15px;
+}
+.hero-section section:last-child .license p {
+  font-size: 80%;
+  text-transform: uppercase;
+  color: #022b69;
+  margin-bottom: 0;
+}
+
+.props-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;
+  gap: 5rem;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+.props-section .props-div {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.props-section .props-card {
+  padding: 48px;
+  border-radius: 20px;
+  max-height: 745px;
+  overflow: hidden;
+}
+.props-section .props-card h2 {
+  font-size: 2.45rem;
+  font-weight: bold;
+  color: #022b69;
+  margin-bottom: 10px;
+}
+.props-section .props-card h4 {
+  color: #022b69;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.props-section .props-card h6 {
+  color: #022b6999;
+  margin: 0;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+.props-section .props-card p {
+  color: #022b6999;
+  margin-bottom: 10px;
+}
+.props-section .props-card a {
+  text-transform: uppercase;
+  color: #0066f5;
+  font-size: 0.9rem;
+}
+.props-section .props-card__text {
+  margin-bottom: 40px;
+}
+.props-section .props-card__image {
+  position: relative;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+}
+.props-section .props-card__image img {
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition-delay: 0.25s;
+}
+.props-section .props-card__image .main_image {
+  width: 80%;
+  position: absolute;
+  right: -48px;
+  bottom: -48px;
+  z-index: 1;
+}
+.props-section .props-card__image .other_image {
+  width: 70%;
+  position: absolute;
+  height: auto;
+  top: 0;
+  opacity: 0;
+}
+.props-section .props-card__image:hover .main_image {
+  opacity: 0;
+  transform: scale(0.97) translate3d(-20px, 0, 10px);
+}
+.props-section .props-card__image:hover .other_image {
+  display: block;
+  opacity: 1;
+  transform: scale(1.07) translate3d(0, -10px, 0);
+}
+
+.bg-zircon {
+  background-color: #f4f6ff;
+}
+
+.bg-pattern {
+  background-color: #e1f6ff;
+}
+
+.bg-blue {
+  background-color: #0066f5;
+}
+.bg-blue h2, .bg-blue h4, .bg-blue h6, .bg-blue a {
+  color: #ffffff;
+}
+.bg-blue p {
+  color: #ffffffd7;
+}
+
+.bg-seashell {
+  background-color: #fff6ee;
+}
+
+.bg-lavender {
+  background-color: #fdf3f6;
+}
+
+.bg-whisper {
+  background-color: #f5f6fa;
+}
+
+* {
+  font-family: "BR Firma", "BR Firma sub", sans-serif;
+}
+
 body {
-  background-color: rgba(182, 182, 66, 0.521);
-  color: red;
+  background-color: #ffffff;
+  color: #022b69;
+}
+body > div {
+  padding: 0 20px;
 }

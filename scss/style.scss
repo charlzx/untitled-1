@@ -1,0 +1,16 @@
+@use 'config' as *;
+@forward 'main';
+
+* {
+   font-family: $br-firma, sans-serif;
+}
+
+body {
+                                                
+   background-color: $white;
+   color: $midnight-blue;
+
+   & > div {   
+      padding: 0 20px;
+   }
+}

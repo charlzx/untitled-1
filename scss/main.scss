@@ -1,6 +1,229 @@
 @use 'config' as *;
 
-body {
-   background-color: rgba(182, 182, 66, 0.521);
-   color: red;
+.hero-section {
+   display: grid;
+   grid-template-columns: .75fr 1fr;
+   grid-gap: 10px; gap: 10px;
+
+   section:first-child {
+      img {
+         width: 100%;
+      }
+   }
+
+   section:last-child {
+      position: relative;
+
+      h1 {
+         font-size: 4.5rem;
+         font-weight: bold;
+      }
+
+      p {
+         color: $midnight-blue-l
+      }
+
+      form {
+         input {
+            padding: 10px 15px;
+            border-radius: 7.5px;
+
+            &[type="email"], &[type="text"] {
+               border: 1px solid $midnight-blue-l;
+               width: 300px;
+               margin-right: 10px;
+
+               &::-webkit-input-placeholder {
+                  color: $midnight-blue-l;
+               }
+
+               &::-moz-placeholder {
+                  color: $midnight-blue-l;
+               }
+
+               &:-ms-input-placeholder {
+                  color: $midnight-blue-l;
+               }
+
+               &::-ms-input-placeholder {
+                  color: $midnight-blue-l;
+               }
+
+               &::placeholder {
+                  color: $midnight-blue-l;
+               }
+            }
+
+            &[type="submit"] {
+               color: $white;
+               background-color: $ribbon-blue;
+               border: 1px solid $ribbon-blue;
+               padding: 10px 20px;
+               box-shadow: $shadow;
+            }
+         }
+      }
+
+      .app-links {
+         display: none;
+
+         a > img {
+            width: 125px;
+         }
+      }
+
+      .license {
+         display: flex;
+         align-items: center;
+         position: absolute;
+         bottom: 0;
+
+         img {
+            width: auto;
+            height: 15px;
+         }
+
+         p {
+            font-size: 80%;
+            text-transform: uppercase;
+            color: $midnight-blue;
+            margin-bottom: 0;
+         }
+      }
+   }
+}
+
+.props-section {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 5rem;
+   gap: 5rem;
+   padding-top: 30px;
+   padding-bottom: 100px;   
+
+   .props-div {
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+   }
+
+   .props-card {
+      padding: 48px;
+      border-radius: 20px;
+      max-height: 745px;
+      overflow: hidden;
+
+      h2 {
+         font-size: 2.45rem;
+         font-weight: bold;
+         color: $midnight-blue;
+         margin-bottom: 10px;
+      }
+      
+      h4 {
+         color: $midnight-blue;
+         font-weight: bold;
+         font-size: 2rem;
+         margin-bottom: 10px;
+      }
+
+      h6 {
+         color: $midnight-blue-l;
+         margin: 0;
+         font-size: 1.3rem;
+         margin-bottom: 5px;
+      }
+
+      p {
+         color: $midnight-blue-l;
+         margin-bottom: 10px;
+         // font-size: 1.8rem;
+      }
+      
+      a {
+         text-transform: uppercase;
+         color: $ribbon-blue;
+         font-size: .9rem;
+      }
+   }
+
+   .props-card__text {
+      margin-bottom: 40px;
+   }
+
+   .props-card__image {
+      position: relative;
+      height: 350px;
+      display: flex;
+      justify-content: center;
+
+      img {
+         transition: all .4s cubic-bezier(.215,.61,.355,1);
+         transition-delay: .25s;
+      }
+
+      .main_image {
+         width: 80%;
+         position: absolute;
+         right: -48px;
+         bottom: -48px;
+         z-index: 1;
+      }
+      
+      .other_image {
+         width: 70%;
+         position: absolute;
+         height: auto;
+         top: 0;
+         opacity: 0;
+      }
+      
+      &:hover {
+
+         .main_image {
+            // animation: fadeOutLeft .5s ease;
+            // transition: 10s ease;
+            // left: -80%;
+            opacity: 0;
+            transform: scale(.97) translate3d(-20px,0,10px);
+         }
+         .other_image {
+            display: block;
+            // animation: fadeInUp .5s ease-in;
+            opacity: 1;
+            transform: scale(1.07) translate3d(0,-10px,0);
+
+
+            
+         }
+      }               
+   }
+}
+
+// background themes
+.bg-zircon {
+   background-color: #f4f6ff;
+}
+.bg-pattern {
+   background-color: #e1f6ff;
+}
+.bg-blue {
+   background-color: #0066f5;
+   
+   h2, h4, h6, a {
+      color: $white;
+   }
+
+   p {
+      color: $alto;
+   }
+}
+.bg-seashell {
+   background-color: #fff6ee;
+}
+.bg-lavender {
+   background-color: #fdf3f6;
+}
+.bg-whisper {
+   background-color: #f5f6fa;
 }
