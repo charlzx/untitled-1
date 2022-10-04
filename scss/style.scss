@@ -1,5 +1,6 @@
 @use 'config' as *;
 @forward 'main';
+@forward 'media';
 
 * {
    font-family: $br-firma, sans-serif;
@@ -13,4 +14,77 @@ body {
    & > div {   
       padding: 0 20px;
    }
+}
+
+// background themes
+.bg-zircon {
+   background-color: #f4f6ff;
+}
+.bg-pattern {
+   background-color: #e1f6ff;
+}
+.bg-blue {
+   background-color: #0066f5;
+   
+   h2, h4, h6, a {
+      color: $white;
+   }
+
+   p {
+      color: $alto;
+   }
+}
+.bg-seashell {
+   background-color: #fff6ee;
+}
+.bg-lavender {
+   background-color: #fdf3f6;
+}
+.bg-whisper {
+   background-color: #f5f6fa;
+}
+
+:where(.header-card, .bg-blue, .bg-zircon, .bg-pattern, .bg-seashell, .bg-whisper, .bg-lavender) {
+   h2 {
+      font-size: 2.45rem;
+      font-weight: bold;
+      color: $midnight-blue;
+      margin-bottom: 10px;
+   }
+   
+   h4 {
+      color: $midnight-blue;
+      font-weight: bold;
+      font-size: 2rem;
+      margin-bottom: 10px;
+   }
+
+   h6 {
+      color: $midnight-blue-l;
+      margin: 0;
+      font-size: 1.3rem;
+      margin-bottom: 5px;
+   }
+
+   p {
+      color: $midnight-blue-l;
+      margin-bottom: 10px;
+      // font-size: 1.8rem;
+   }
+   
+   a {
+      text-transform: uppercase;
+      color: $ribbon-blue;
+      font-size: .9rem;
+   }
+}
+
+.button {
+   color: $white;
+   background-color: $ribbon-blue;
+   border: 1px solid $ribbon-blue;
+   padding: 10px 20px;
+   box-shadow: $shadow;
+   width: max-content;
+   border-radius: 7.5px;
 }
