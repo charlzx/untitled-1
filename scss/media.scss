@@ -2,6 +2,30 @@
    .props-section .props-card__image .other_image {
       padding: 0 7.5%;
    }
+
+   .signup-section {
+      display: grid;
+      grid-template-columns: .8fr 1fr;
+      padding: 40px 3.5%;
+      grid-gap: 10px;
+      gap: 10px;
+      
+      form {
+         width: 100%;
+         background-color: transparent;
+
+         input[type="email"] {
+            width: 100%;
+            background-color: #ffffff40;
+            padding: 15px;
+            margin-bottom: 10px;
+         }
+
+         .submit-button {
+            margin-left: 0;
+         }
+      }
+   }
 }
 @media all and (max-width: 1024px) {
    .props-section .props-card__image .other_image {
@@ -41,6 +65,12 @@
          align-items: flex-start;
       }
    }
+
+   .signup-section {
+      h2 {
+         font-size: 2.15rem;
+      }
+   }
 }
 
 @media all and (max-width: 768px) {
@@ -77,6 +107,14 @@
 
    .review-card {
       padding: 30px;
+   }
+
+   .signup-section {
+      grid-template-columns: 1fr;
+
+      form {
+         padding: 0;
+      }
    }
 }
 

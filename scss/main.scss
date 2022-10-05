@@ -53,14 +53,6 @@
                   color: $midnight-blue-l;
                }
             }
-
-            &[type="submit"] {
-               color: $white;
-               background-color: $ribbon-blue;
-               border: 1px solid $ribbon-blue;
-               padding: 10px 20px;
-               box-shadow: $shadow;
-            }
          }
       }
 
@@ -201,7 +193,6 @@
 }
 
 .steps-card {
-
    p {
       padding-bottom: 40px;
       border-left: 1px solid $ribbon-blue;
@@ -272,6 +263,7 @@
 
    .security-info {
       width: 450px;
+      margin-bottom: 40px;
 
       h2 {
          font-size: 2.35rem;
@@ -286,6 +278,7 @@
       a {
          text-transform: uppercase;
          color: $alto;
+         font-size: 15px;
       }
 
    }
@@ -362,8 +355,6 @@
          height: 50px;
          right: 0;
       }
-
-
    }
 
    .review-comment {
@@ -379,6 +370,60 @@
          color: #aeb9cc;
          margin-bottom: 40px;
          font-size: 85%;
+      }
+      
+      a {
+         text-transform: uppercase;
+         font-weight: bold;
+         color: $ribbon-blue;
+         font-size: 14px;
+      }
+   }
+}
+
+.signup-section {
+   background-color: $ribbon-blue;
+   color: $white;
+   border-radius: 20px;
+   padding: 60px 5%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 40px 0 50px;
+
+   h2 {
+      font-size: 2.35rem;
+      font-weight: bold;
+      line-height: 3rem;
+   }
+
+   form {
+      background-color: #ffffff40;
+      padding: 10px;
+      border-radius: 7.5px;
+      width: max-content;
+
+      input[type="email"] {
+         background-color: transparent;
+         border-radius: 7.5px;
+         outline: 0;
+         border: 0;
+         width: 300px;
+         color: $white;
+         font-size: 16px;
+
+         &::placeholder {
+            color: $white;
+         }
+      }
+
+      .submit-button {
+         background-color: $white;
+         color: $midnight-blue;
+         border: 0;
+         font-weight: bold;
+         margin-left: 5px;
+         font-size: 16px;
       }
    }
 }

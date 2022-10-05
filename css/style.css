@@ -48,13 +48,6 @@
 .hero-section section:last-child form input[type=email]::placeholder, .hero-section section:last-child form input[type=text]::placeholder {
   color: #022b6999;
 }
-.hero-section section:last-child form input[type=submit] {
-  color: #ffffff;
-  background-color: #0066f5;
-  border: 1px solid #0066f5;
-  padding: 10px 20px;
-  box-shadow: 0px 18px 23px -7px rgba(0, 0, 0, 0.164);
-}
 .hero-section section:last-child .app-links {
   display: none;
 }
@@ -229,6 +222,7 @@
 }
 .security-section .security-info {
   width: 450px;
+  margin-bottom: 40px;
 }
 .security-section .security-info h2 {
   font-size: 2.35rem;
@@ -241,6 +235,7 @@
 .security-section .security-info a {
   text-transform: uppercase;
   color: #ffffffd7;
+  font-size: 15px;
 }
 .security-section .security-list {
   width: 85%;
@@ -318,10 +313,79 @@
   margin-bottom: 40px;
   font-size: 85%;
 }
+.review-card .review-comment a {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #0066f5;
+  font-size: 14px;
+}
+
+.signup-section {
+  background-color: #0066f5;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 60px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 50px;
+}
+.signup-section h2 {
+  font-size: 2.35rem;
+  font-weight: bold;
+  line-height: 3rem;
+}
+.signup-section form {
+  background-color: #ffffff40;
+  padding: 10px;
+  border-radius: 7.5px;
+  width: max-content;
+}
+.signup-section form input[type=email] {
+  background-color: transparent;
+  border-radius: 7.5px;
+  outline: 0;
+  border: 0;
+  width: 300px;
+  color: #ffffff;
+  font-size: 16px;
+}
+.signup-section form input[type=email]::placeholder {
+  color: #ffffff;
+}
+.signup-section form .submit-button {
+  background-color: #ffffff;
+  color: #022b69;
+  border: 0;
+  font-weight: bold;
+  margin-left: 5px;
+  font-size: 16px;
+}
 
 @media all and (max-width: 1100px) {
   .props-section .props-card__image .other_image {
     padding: 0 7.5%;
+  }
+
+  .signup-section {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    padding: 40px 3.5%;
+    grid-gap: 10px;
+    gap: 10px;
+  }
+  .signup-section form {
+    width: 100%;
+    background-color: transparent;
+  }
+  .signup-section form input[type=email] {
+    width: 100%;
+    background-color: #ffffff40;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  .signup-section form .submit-button {
+    margin-left: 0;
   }
 }
 @media all and (max-width: 1024px) {
@@ -353,6 +417,10 @@
   .review-card .review-rating {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .signup-section h2 {
+    font-size: 2.15rem;
   }
 }
 @media all and (max-width: 768px) {
@@ -386,6 +454,13 @@
   .review-card {
     padding: 30px;
   }
+
+  .signup-section {
+    grid-template-columns: 1fr;
+  }
+  .signup-section form {
+    padding: 0;
+  }
 }
 @media all and (max-width: 500px) {
   .props-section .props-card {
@@ -405,7 +480,7 @@ body {
   color: #022b69;
   font-size: 18px;
 }
-body > div {
+body > div, body > footer {
   padding: 0 20px;
 }
 
@@ -474,5 +549,14 @@ body > div {
   padding: 10px 20px;
   box-shadow: 0px 18px 23px -7px rgba(0, 0, 0, 0.164);
   width: max-content;
+  border-radius: 7.5px;
+}
+
+.submit-button {
+  color: #ffffff;
+  background-color: #0066f5;
+  border: 1px solid #0066f5;
+  padding: 10px 20px;
+  box-shadow: 0px 18px 23px -7px rgba(0, 0, 0, 0.16);
   border-radius: 7.5px;
 }
