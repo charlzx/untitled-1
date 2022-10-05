@@ -9,6 +9,7 @@
 
    .testimonial {
       position: relative;
+      overflow: hidden;
 
       img {
          width: 95%;
@@ -98,6 +99,7 @@
          align-items: center;
          position: absolute;
          bottom: 0;
+         right: 0;
 
          img {
             width: auto;
@@ -438,6 +440,8 @@
       background-color: #ffffff40;
       padding: 10px;
       border-radius: 7.5px;
+      width: -webkit-max-content;
+      width: -moz-max-content;
       width: max-content;
 
       input[type="email"] {
@@ -448,6 +452,22 @@
          width: 300px;
          color: $white;
          font-size: 16px;
+
+         &::-webkit-input-placeholder {
+            color: $white;
+         }
+
+         &::-moz-placeholder {
+            color: $white;
+         }
+
+         &:-ms-input-placeholder {
+            color: $white;
+         }
+
+         &::-ms-input-placeholder {
+            color: $white;
+         }
 
          &::placeholder {
             color: $white;

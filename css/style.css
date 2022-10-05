@@ -15,6 +15,7 @@
 }
 .hero-section .testimonial {
   position: relative;
+  overflow: hidden;
 }
 .hero-section .testimonial img {
   width: 95%;
@@ -87,6 +88,7 @@
   align-items: center;
   position: absolute;
   bottom: 0;
+  right: 0;
 }
 .hero-section .hero-info .license img {
   width: auto;
@@ -374,6 +376,8 @@
   background-color: #ffffff40;
   padding: 10px;
   border-radius: 7.5px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
 }
 .signup-section form input[type=email] {
@@ -384,6 +388,18 @@
   width: 300px;
   color: #ffffff;
   font-size: 16px;
+}
+.signup-section form input[type=email]::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.signup-section form input[type=email]::-moz-placeholder {
+  color: #ffffff;
+}
+.signup-section form input[type=email]:-ms-input-placeholder {
+  color: #ffffff;
+}
+.signup-section form input[type=email]::-ms-input-placeholder {
+  color: #ffffff;
 }
 .signup-section form input[type=email]::placeholder {
   color: #ffffff;
@@ -696,6 +712,8 @@ body > div, body > footer {
   border: 1px solid #0066f5;
   padding: 10px 20px;
   box-shadow: 0px 18px 23px -7px rgba(0, 0, 0, 0.164);
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   border-radius: 7.5px;
 }
