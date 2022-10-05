@@ -26,6 +26,21 @@
          }
       }
    }
+
+   .security-section {
+      .security-list {
+         width: 100%;
+         grid-gap: 50px;
+         gap: 50px;
+      }
+   }
+
+   .review-card {
+      .review-rating {
+         flex-direction: column;
+         align-items: flex-start;
+      }
+   }
 }
 
 @media all and (max-width: 768px) {
@@ -45,6 +60,24 @@
          display: none;
       }
    }
+
+   .security-section {
+      .security-list {
+         grid-template-columns: 1fr;
+
+         .security-card {
+            padding-left: 40px;
+         }
+      }
+   }
+
+   .review-section {
+      grid-template-columns: 1fr;
+   }
+
+   .review-card {
+      padding: 30px;
+   }
 }
 
 @media all and (max-width: 500px) {
@@ -52,5 +85,9 @@
       .props-card {
          padding: 30px 30px 0 30px;
       }
+   }
+
+   .review-card {
+      padding: 20px;
    }
 }

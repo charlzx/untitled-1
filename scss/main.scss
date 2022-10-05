@@ -196,6 +196,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      overflow: hidden;
    }
 }
 
@@ -244,5 +245,140 @@
    }
    .step-five::before {
       content: '05';
+   }
+}
+
+.security-section {
+   background-color: $ribbon-blue;
+   color: $white;
+   position: relative;
+   overflow: hidden;
+   padding-top: 60px;
+   padding-bottom: 80px;
+   
+   &:after {
+      content: "";
+      background-image: url("../images/patterns/security.svg");
+      background-repeat: no-repeat;
+      height: 790px;
+      width: 780px;
+      background-position: 126px;
+      background-size: 110%;
+      position: absolute;
+      right: -150px;
+      top: 100px;
+      opacity: .5;
+   }
+
+   .security-info {
+      width: 450px;
+
+      h2 {
+         font-size: 2.35rem;
+         font-weight: bold;
+         margin-bottom: 30px;
+      }
+      
+      p {
+         margin-bottom: 20px;
+      }
+
+      a {
+         text-transform: uppercase;
+         color: $alto;
+      }
+
+   }
+
+   .security-list {
+      width: 85%;
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 80px;
+      gap: 80px;
+
+      .security-card {
+         position: relative;
+         padding-left: 50px;
+
+         &::before {
+            content: url('../images/box.svg');
+            position: absolute;
+            left: 0;
+         }
+
+         h5 {
+            font-weight: bold;
+            font-size: 1.25rem;
+         } 
+      }
+   }
+}
+
+.review-section {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 40px;
+   gap: 40px;
+   padding-top: 40px;
+   padding-bottom: 40px;
+}
+
+.review-card {
+   border-radius: 20px;
+   // box-shadow: $shadow;
+   box-shadow: 1px 12px 24px rgb(2 43 105 / 5%);
+   border: 1px solid $gray-l;
+   padding: 20px;
+
+   .review-rating {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      p {
+         margin-bottom: 0;
+         margin-right: 25px;
+         font-weight: bold;    
+         color: #aeb9cc;
+
+
+         span {
+            font-size: 2rem;
+            color: $midnight-blue;
+         }
+      }
+      
+      .rating__image {
+         width: 120px;
+         height: auto;
+         margin-right: 35px;
+      }
+
+      .store__image {
+         position: absolute;
+         width: 120px;
+         height: 50px;
+         right: 0;
+      }
+
+
+   }
+
+   .review-comment {
+      margin-top: 20px;
+      
+      h4 {
+         font-size: 2rem;
+         margin-bottom: 20px;
+         font-weight: bold;
+      }
+      
+      p {
+         color: #aeb9cc;
+         margin-bottom: 40px;
+         font-size: 85%;
+      }
    }
 }

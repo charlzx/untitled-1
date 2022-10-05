@@ -162,6 +162,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 
 .steps-card p {
@@ -205,6 +206,119 @@
   content: "05";
 }
 
+.security-section {
+  background-color: #0066f5;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+.security-section:after {
+  content: "";
+  background-image: url("../images/patterns/security.svg");
+  background-repeat: no-repeat;
+  height: 790px;
+  width: 780px;
+  background-position: 126px;
+  background-size: 110%;
+  position: absolute;
+  right: -150px;
+  top: 100px;
+  opacity: 0.5;
+}
+.security-section .security-info {
+  width: 450px;
+}
+.security-section .security-info h2 {
+  font-size: 2.35rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.security-section .security-info p {
+  margin-bottom: 20px;
+}
+.security-section .security-info a {
+  text-transform: uppercase;
+  color: #ffffffd7;
+}
+.security-section .security-list {
+  width: 85%;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 80px;
+  gap: 80px;
+}
+.security-section .security-list .security-card {
+  position: relative;
+  padding-left: 50px;
+}
+.security-section .security-list .security-card::before {
+  content: url("../images/box.svg");
+  position: absolute;
+  left: 0;
+}
+.security-section .security-list .security-card h5 {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.review-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  gap: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.review-card {
+  border-radius: 20px;
+  box-shadow: 1px 12px 24px rgba(2, 43, 105, 0.05);
+  border: 1px solid #ecdddd7a;
+  padding: 20px;
+}
+.review-card .review-rating {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.review-card .review-rating p {
+  margin-bottom: 0;
+  margin-right: 25px;
+  font-weight: bold;
+  color: #aeb9cc;
+}
+.review-card .review-rating p span {
+  font-size: 2rem;
+  color: #022b69;
+}
+.review-card .review-rating .rating__image {
+  width: 120px;
+  height: auto;
+  margin-right: 35px;
+}
+.review-card .review-rating .store__image {
+  position: absolute;
+  width: 120px;
+  height: 50px;
+  right: 0;
+}
+.review-card .review-comment {
+  margin-top: 20px;
+}
+.review-card .review-comment h4 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.review-card .review-comment p {
+  color: #aeb9cc;
+  margin-bottom: 40px;
+  font-size: 85%;
+}
+
 @media all and (max-width: 1100px) {
   .props-section .props-card__image .other_image {
     padding: 0 7.5%;
@@ -229,6 +343,17 @@
   .steps-section .steps-screenshot img {
     width: 300px;
   }
+
+  .security-section .security-list {
+    width: 100%;
+    grid-gap: 50px;
+    gap: 50px;
+  }
+
+  .review-card .review-rating {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 @media all and (max-width: 768px) {
   .props-section {
@@ -246,10 +371,29 @@
   .steps-section .steps-screenshot {
     display: none;
   }
+
+  .security-section .security-list {
+    grid-template-columns: 1fr;
+  }
+  .security-section .security-list .security-card {
+    padding-left: 40px;
+  }
+
+  .review-section {
+    grid-template-columns: 1fr;
+  }
+
+  .review-card {
+    padding: 30px;
+  }
 }
 @media all and (max-width: 500px) {
   .props-section .props-card {
     padding: 30px 30px 0 30px;
+  }
+
+  .review-card {
+    padding: 20px;
   }
 }
 * {
@@ -259,6 +403,7 @@
 body {
   background-color: #ffffff;
   color: #022b69;
+  font-size: 18px;
 }
 body > div {
   padding: 0 20px;
