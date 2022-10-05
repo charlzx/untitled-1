@@ -1,9 +1,77 @@
+@media all and (min-width: 1025px) {
+   .hero-section .hero-info {
+      padding-top: 20%;
+   }
+}
+
 @media all and (max-width: 1100px) {
    .props-section .props-card__image .other_image {
       padding: 0 7.5%;
    }
+
+   .signup-section {
+      display: grid;
+      grid-template-columns: .8fr 1fr;
+      padding: 40px 3.5%;
+      grid-gap: 10px;
+      gap: 10px;
+      
+      form {
+         width: 100%;
+         background-color: transparent;
+
+         input[type="email"] {
+            width: 100%;
+            background-color: #ffffff40;
+            padding: 15px;
+            margin-bottom: 10px;
+         }
+
+         .submit-button {
+            margin-left: 0;
+         }
+      }
+   }
 }
 @media all and (max-width: 1024px) {
+   .hero-section {
+      grid-template-columns: 1fr;
+      margin-top: 75px;
+
+      .testimonial {
+         order: 2;
+         max-height: 600px;
+         overflow: hidden;
+
+         img {
+            width: 90%;
+         }
+
+         .testimonial__content {
+            left: 20px;
+            bottom: 10px;
+            width: 300px;
+            transform: scale(1.2);
+
+            p {
+               margin: 0;
+            }
+
+            .testimonial__author {
+               margin-top: 20px;
+            }
+         }
+      }
+
+      .hero-info {
+         order: 1;
+
+         .license {
+            display: none;
+         }
+      }
+   }
+
    .props-section .props-card__image .other_image {
       padding: 0;
    }
@@ -26,14 +94,60 @@
          }
       }
    }
+
+   .security-section {
+      .security-list {
+         width: 100%;
+         grid-gap: 50px;
+         gap: 50px;
+      }
+   }
+
+   .review-card {
+      .review-rating {
+         flex-direction: column;
+         align-items: flex-start;
+      }
+   }
+
+   .signup-section {
+      h2 {
+         font-size: 2.15rem;
+      }
+   }
+}
+
+@media all and (max-width: 875px) {
+   .footer-menu {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 30px 10px;
+      gap: 30px 10px;
+   }
 }
 
 @media all and (max-width: 768px) {
+   .hero-section {
+      .testimonial {
+         img {
+            width: 100%;
+         }
+
+         .testimonial__content {
+            transform: scale(.8);
+            left: -20px;
+         }
+      }
+   }
+
    .props-section {
       grid-template-columns: 1fr;
       padding-left: 5%;
       padding-right: 5%;
       gap: 50px;
+
+      .props-div {
+         gap: 30px;
+      }
    }
 
    .steps-section {
@@ -45,12 +159,84 @@
          display: none;
       }
    }
+
+   .security-section {
+      .security-list {
+         grid-template-columns: 1fr;
+
+         .security-card {
+            padding-left: 40px;
+         }
+      }
+   }
+
+   .review-section {
+      grid-template-columns: 1fr;
+   }
+
+   .review-card {
+      padding: 30px;
+   }
+
+   .signup-section {
+      grid-template-columns: 1fr;
+
+      form {
+         padding: 0;
+      }
+   }
+}
+
+@media all and (max-width: 600px) {
+   .hero-section .hero-info {
+      form {
+         display: none;
+      }
+
+      .app-links {
+         display: flex;
+         grid-gap: 15px;
+         gap: 15px;
+      }
+   }
 }
 
 @media all and (max-width: 500px) {
+   .hero-section {
+      .hero-info {
+         h1 {
+            font-size: 3.85rem;
+            line-height: 57.5px;
+         }
+      }
+   }
+
    .props-section {
       .props-card {
          padding: 30px 30px 0 30px;
+      }
+   }
+
+   .review-card {
+      padding: 20px;
+   }
+
+   .footer-menu {
+      gap: 18.5px 10px;
+
+      .menu-list {
+         h3 {
+            font-size: 1.15rem;
+            margin-bottom: 15px;
+         }
+
+         ul li {
+            margin-bottom: 12.5px;
+
+            a {
+               font-size: 14.5px;
+            }
+         }
       }
    }
 }
