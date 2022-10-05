@@ -146,10 +146,18 @@
 
  <!-- hero section -->
 	<div class="hero-section">
-		<section class="testomonial">
+		<section class="testimonial">
 			<img src="images/slider/wura.jpg" alt="">
+			<div class="testimonial__content">
+				<p class="testimonial__text">
+					I've become more conscious of how I spend my money and also about investing.
+					Now, I feel comfortable spending knowing my Cowrywise account is there.
+				</p>
+				<p class="testimonial__author">- Wuraola F</p>
+			</div>
 		</section>
-		<section>
+
+		<section class="hero-info">
 			<h1>
 				Put your <br>
 				money to work.
@@ -382,6 +390,65 @@
 			</form>
 		</div>
 		
+		<div class="footer-menu">
+			<div class="menu-list">
+				<h3>Company</h3>
+				<ul>
+					<li><a href="">About Us</a></li>
+					<li><a href="">Press</a></li>
+					<li><a href="">Careers</a></li>
+					<li><a href="">Ambassadors</a></li>
+					<li><a href="">Privacy</a></li>
+					<li><a href="">Terms</a></li>
+				</ul>
+			</div>
+			
+			<div class="menu-list">
+				<h3>Product</h3>
+				<ul>
+					<li><a href="">Saving Plans</a></li>
+					<li><a href="">Investment Plans</a></li>
+					<li><a href="">Mutual Funds</a></li>
+					<li><a href="">Stash</a></li>
+					<li><a href="">Embed API</a></li>
+					<li><a href="">Sprout</a></li>
+					<li><a href="">Circles</a></li>
+					<li><a href="">Halal</a></li>
+					<li><a href="">Got a suggestion?</a></li>
+				</ul>
+			</div>
+
+			<div class="menu-list">
+				<h3>Resources</h3>
+				<ul>
+					<li><a href="">Customer Stories</a></li>
+					<li><a href="">Media</a></li>
+					<li><a href="">FAQs</a></li>
+					<li><a href="">Security</a></li>
+					<li><a href="">Estimate your Interest</a></li>
+					<li><a href="">Plan Education</a></li>
+					<li><a href="">Blog</a></li>
+					<li><a href="">Help Center</a></li>
+				</ul>
+			</div>
+
+			<div class="menu-list">
+				<h3>Contact</h3>
+				<ul>
+					<li><a href="mailto:">support@cowrywise.com</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<p>&copy; <span id="year"></span> Cowrywise Financial Technology. All rights reserved</p>
+		</div>
 	</footer>
+
+	<script>
+		let year = document.querySelector('#year');
+		let thisYear = new Date().getFullYear()
+		year.innerHTML = thisYear
+	</script>
 </body>
 </html>

@@ -88,6 +88,10 @@ body {
    box-shadow: $shadow;
    width: max-content;
    border-radius: 7.5px;
+
+   &:hover {
+      color: $alto;
+   }
 }
 
 .submit-button {

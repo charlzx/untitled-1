@@ -1,29 +1,56 @@
 @use 'config' as *;
 
 .hero-section {
+   margin-top: 100px;
+   margin-bottom: 50px;
    display: grid;
    grid-template-columns: .75fr 1fr;
-   grid-gap: 10px; gap: 10px;
+   grid-gap: 5%; gap: 5%;
 
-   section:first-child {
+   .testimonial {
+      position: relative;
+
       img {
-         width: 100%;
+         width: 95%;
+      }
+
+      .testimonial__content {
+         position: absolute;
+         background-color: $white;
+         // background-color: blueviolet;
+         width: 350px;
+         font-size: 14px;
+         color: $midnight-blue-l;
+         padding: 20px;
+         right: -10px;
+         bottom: -10px;
+
+         .testimonial__author {
+            margin-top: 30px;
+            color: $midnight-blue;
+         }
       }
    }
 
-   section:last-child {
+   .hero-info {
       position: relative;
 
       h1 {
-         font-size: 4.5rem;
+         font-size: 4.75rem;
          font-weight: bold;
+         letter-spacing: -5px;
+         line-height: 70px;
+         margin-bottom: 20px;
       }
 
       p {
-         color: $midnight-blue-l
+         color: $midnight-blue-l;
+         margin-bottom: 10px;
       }
 
       form {
+         margin-top: 20px;
+
          input {
             padding: 10px 15px;
             border-radius: 7.5px;
@@ -32,6 +59,7 @@
                border: 1px solid $midnight-blue-l;
                width: 300px;
                margin-right: 10px;
+               margin-bottom: 10px;
 
                &::-webkit-input-placeholder {
                   color: $midnight-blue-l;
@@ -61,6 +89,7 @@
 
          a > img {
             width: 125px;
+            height: 50px;
          }
       }
 
@@ -198,6 +227,7 @@
       border-left: 1px solid $ribbon-blue;
       padding-left: 47px;
       margin-left: 9px;
+      color: $midnight-blue-l;
    }
    
    .last-step {
@@ -210,6 +240,7 @@
       font-weight: bold;
       padding-left: 55px;
       position: relative;
+      color: $midnight-blue;
    }
 
    h4::before {
@@ -269,10 +300,12 @@
          font-size: 2.35rem;
          font-weight: bold;
          margin-bottom: 30px;
+         color: $white;
       }
       
       p {
          margin-bottom: 20px;
+         color: $alto;
       }
 
       a {
@@ -305,6 +338,10 @@
             font-weight: bold;
             font-size: 1.25rem;
          } 
+
+         p {
+            color: $alto;
+         }
       }
    }
 }
@@ -421,9 +458,45 @@
          background-color: $white;
          color: $midnight-blue;
          border: 0;
-         font-weight: bold;
+         font-weight: 600;
          margin-left: 5px;
          font-size: 16px;
       }
    }
+}
+
+.footer-menu {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 10px;
+   gap: 10px;
+
+   .menu-list {
+      h3 {
+         font-size: 1.5rem;
+         font-weight: bold;
+         margin-bottom: 20px;
+      }
+
+      ul {
+         list-style-type: none;
+         padding: 0;
+
+         li {
+            margin-bottom: 17.5px;
+            
+            a {
+               color: $midnight-blue-l;
+               font-size: 16px;
+            }
+         }
+      }
+   }
+}
+
+.copyright {
+   padding: 20px 0;
+   border-top: 1px solid $gray-l;
+   color: $midnight-blue-l;
+   font-size: 14px;
 }
