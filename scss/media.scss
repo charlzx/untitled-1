@@ -1,3 +1,12 @@
+@use 'config' as *;
+
+@media all and (min-width: 1400px) {
+   body > nav > .container-fluid, .parent {
+      width: 1285px;
+      margin: 0 auto;
+   }
+}
+
 @media all and (min-width: 1025px) {
    .hero-section .hero-info {
       padding-top: 20%;
@@ -33,10 +42,13 @@
       }
    }
 }
+
 @media all and (max-width: 1024px) {
    .hero-section {
-      grid-template-columns: 1fr;
-      margin-top: 75px;
+      .parent {
+         grid-template-columns: 1fr;
+         margin-top: 75px;
+      }
 
       .testimonial {
          order: 2;
@@ -77,8 +89,10 @@
    }
 
    .props-section {
-      grid-gap: 5%;
-      gap: 5%;
+      .parent {
+         grid-gap: 5%;
+         gap: 5%;
+      }
 
       .props-div {
          gap: 50px;
@@ -140,10 +154,12 @@
    }
 
    .props-section {
-      grid-template-columns: 1fr;
-      padding-left: 5%;
-      padding-right: 5%;
-      gap: 50px;
+      .parent {
+         grid-template-columns: 1fr;
+         padding-left: 5%;
+         padding-right: 5%;
+         gap: 50px;
+      }
 
       .props-div {
          gap: 30px;
@@ -151,9 +167,12 @@
    }
 
    .steps-section {
-      grid-template-columns: 1fr;
       padding-left: 5%;
       padding-right: 5%;
+
+      .parent {
+         grid-template-columns: 1fr;
+      }
 
       .steps-screenshot {
          display: none;
@@ -161,6 +180,11 @@
    }
 
    .security-section {
+
+      &::after {
+         background-image: none;
+      }
+
       .security-list {
          grid-template-columns: 1fr;
 
@@ -214,6 +238,12 @@
    .props-section {
       .props-card {
          padding: 30px 30px 0 30px;
+      }
+   }
+
+   .security-section {
+      .security-info {
+         width: 100%;
       }
    }
 

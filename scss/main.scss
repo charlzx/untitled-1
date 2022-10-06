@@ -1,11 +1,14 @@
 @use 'config' as *;
 
+/* hero section */
 .hero-section {
-   margin-top: 100px;
-   margin-bottom: 50px;
-   display: grid;
-   grid-template-columns: .75fr 1fr;
-   grid-gap: 5%; gap: 5%;
+   .parent {
+      margin-top: 100px;
+      margin-bottom: 50px;
+      display: grid;
+      grid-template-columns: .75fr 1fr;
+      grid-gap: 5%; gap: 5%;
+   }
 
    .testimonial {
       position: relative;
@@ -115,14 +118,16 @@
       }
    }
 }
-
+/* props section */
 .props-section {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-gap: 5rem;
-   gap: 5rem;
-   padding-top: 30px;
-   padding-bottom: 100px;   
+   .parent {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 5rem;
+      gap: 5rem;
+      padding-top: 30px;
+      padding-bottom: 100px;  
+   } 
 
    .props-div {
       display: flex;
@@ -190,17 +195,20 @@
    }
 }
 
+/* steps section */
 .steps-section {
    background-image: url("/images/patterns/home-device-section.svg");
    background-repeat: no-repeat;
    background-position: -120% -120px;
    background-size: 77%;
    background-color: #fcfcfc;
-
-   display: grid;
-   grid-template-columns: .8fr 1fr;
    padding: 50px 7.5%;
-   grid-gap: 2.5%; gap: 2.5%;
+
+   .parent {
+      display: grid;
+      grid-template-columns: .8fr 1fr;
+      grid-gap: 2.5%; gap: 2.5%;
+   }
    
    .steps-screenshot {
       img {
@@ -272,13 +280,17 @@
    }
 }
 
+/* security section */
 .security-section {
    background-color: $ribbon-blue;
-   color: $white;
    position: relative;
    overflow: hidden;
-   padding-top: 60px;
-   padding-bottom: 80px;
+   
+   .parent {
+      color: $white;
+      padding-top: 60px;
+      padding-bottom: 80px;
+   }
    
    &:after {
       content: "";
@@ -348,6 +360,7 @@
    }
 }
 
+/* global review section */ 
 .review-section {
    display: grid;
    grid-template-columns: 1fr 1fr;
@@ -420,6 +433,7 @@
    }
 }
 
+/* global signup section*/ 
 .signup-section {
    background-color: $ribbon-blue;
    color: $white;
@@ -429,6 +443,7 @@
    justify-content: space-between;
    align-items: center;
    margin: 40px 0 50px;
+   box-shadow: 0 59px 51px -34px rgba(0, 102, 245, 0.212);
 
    h2 {
       font-size: 2.35rem;
@@ -485,6 +500,7 @@
    }
 }
 
+/* global footer menu*/ 
 .footer-menu {
    display: grid;
    grid-template-columns: repeat(4, 1fr);
@@ -514,6 +530,7 @@
    }
 }
 
+/* copyright */
 .copyright {
    padding: 20px 0;
    border-top: 1px solid $gray-l;
