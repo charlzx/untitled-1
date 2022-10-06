@@ -1,0 +1,7 @@
+@import url("http://fonts.cdnfonts.com/css/br-firma");
+@font-face {
+  font-family: "BR Firma sub";
+  src: url("../fonts/BR Firma.woff2") format("woff2"), url("../fonts/BR Firma.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

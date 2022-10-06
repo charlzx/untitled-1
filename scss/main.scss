@@ -1,5 +1,8 @@
 @use 'config' as *;
 
+a:hover {
+   color: $midnight-blue;
+}
 /* hero section */
 .hero-section {
    .parent {
@@ -107,6 +110,7 @@
          img {
             width: auto;
             height: 15px;
+            margin-right: 5px;
          }
 
          p {
@@ -201,7 +205,7 @@
    background-repeat: no-repeat;
    background-position: -120% -120px;
    background-size: 77%;
-   background-color: #fcfcfc;
+   // background-color: #fcfcfc;
    padding: 50px 7.5%;
 
    .parent {
@@ -524,6 +528,10 @@
             a {
                color: $midnight-blue-l;
                font-size: 16px;
+
+               &:hover {
+                  color: $midnight-blue;
+               }
             }
          }
       }
