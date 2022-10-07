@@ -29,6 +29,10 @@ body > div {
             color: $midnight-blue;
             line-height: 3rem;
             margin-bottom: 15px;
+
+            .line-break {
+               display: none;
+            }
          }
 
          p {
@@ -109,7 +113,7 @@ body > div {
       align-items: center;
       justify-content: space-between;
       font-size: 14px;
-      margin-top: 10px;
+      margin-top: 30px;
       
       img {
          width: 20px;
@@ -165,7 +169,7 @@ button {
 
 @media all and (max-width: 600px) {
    body > div {
-      padding: 30px 2.5% 70px;
+      padding: 30px 5% 70px;
 
       .login-section {
          grid-gap: 30px;
@@ -199,6 +203,10 @@ button {
 
 @media all and (max-width: 450px) {
    body > div {
+      .login-section .info h3 .line-break {
+         display: block;
+      }
+      
       .login-section .card-section {
          padding: 20px 20px 0;
 
