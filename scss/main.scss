@@ -4,9 +4,13 @@ a:hover {
    color: $midnight-blue;
 }
 /* hero section */
+
+body:nth-child(2) {
+   margin-top: 100px;
+}
+
 .hero-section {
    .parent {
-      margin-top: 100px;
       margin-bottom: 50px;
       display: grid;
       grid-template-columns: .75fr 1fr;
@@ -544,4 +548,29 @@ a:hover {
    border-top: 1px solid $gray-l;
    color: $midnight-blue-l;
    font-size: 14px;
+}
+
+
+// 404 page
+#error-section {
+   background-repeat: no-repeat;
+   background-image: url(/images/patterns/header-bg.svg);
+   background-position: 50%;
+   background-size: cover;
+
+   .parent {
+      text-align: center;
+      padding: 50px 0 60px;
+   }
+
+   h2 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin: 45px 0;
+   }
+
+   p {
+      font-size: 1.35rem;
+      margin: 15px 0 65px;
+   }
 }

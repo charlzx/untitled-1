@@ -5,6 +5,10 @@
       width: 1285px;
       margin: 0 auto;
    }
+
+   #error-section {
+      background-image: none;
+   }
 }
 
 @media all and (min-width: 1025px) {
@@ -44,10 +48,13 @@
 }
 
 @media all and (max-width: 1024px) {
+   body:nth-child(2) {
+      margin-top: 75px;
+   }
+   
    .hero-section {
       .parent {
          grid-template-columns: 1fr;
-         margin-top: 75px;
       }
 
       .testimonial {
@@ -204,9 +211,29 @@
 
    .signup-section {
       grid-template-columns: 1fr;
+      padding: 20px 5%;
+      margin: 0 0 50px;
 
       form {
          padding: 0;
+      }
+   }
+
+   #error-section {
+      br {
+         display: none;
+      }
+
+      .parent {
+         padding: 30px 0;
+      }
+
+      h2 {
+         margin: 25px 0;
+      }
+
+      p {
+         margin: 15px 0 30px;
       }
    }
 }
