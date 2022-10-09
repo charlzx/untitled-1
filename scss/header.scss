@@ -26,19 +26,23 @@ font-size: 0.67em;
 
 a {
    text-decoration: none;
-   color: $midnight-blue-l;
+   color: $gray;
+}
+
+nav {
+   box-shadow: 0px 18px 23px -7px rgba(233, 226, 226, 0.048);
 }
 
 .nav-link {
    font-weight: 500;
-   color: $midnight-blue-l !important;
+   color: $gray !important;
 
    &:hover {
-      color: $midnight-blue !important;
+      color: $black !important;
    }
 
    &:focus {
-      color: $midnight-blue !important;
+      color: $black !important;
       font-weight: 600;
    }
 }
@@ -85,7 +89,7 @@ a {
    overflow: hidden;
 
    h3 {
-      color: $midnight-blue;
+      color: $black;
    }
 
    & > section {
@@ -121,12 +125,12 @@ a {
 
          div > h3 {
             margin-bottom: 5px;
-            color: $midnight-blue;
+            color: $black;
          }
          
          div > p {
             margin-bottom: 10px;
-            color: $midnight-blue-l;
+            color: $gray;
 
             &:last-child {
                margin-bottom: 0;
@@ -144,14 +148,14 @@ a {
    width: fit-content;
    
    .login {
-      color: $ribbon-blue;
+      color: $black;
       font-weight: bold;
       margin-right: 20px;
    }
 
    .signup {
       color: $white;
-      background-color: $ribbon-blue;
+      background-color: $black;
       padding: 10px 20px;
       border-radius: 5px;
       box-shadow: $shadow;
@@ -255,7 +259,7 @@ a {
    }
 
    #main_nav {
-      background: $ribbon-blue;
+      background: $black;
       position: absolute;
       padding: 0 2.5%;
       top: -50px;

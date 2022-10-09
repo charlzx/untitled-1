@@ -1,14 +1,18 @@
 @use 'config' as *;
 
-a:hover {
-   color: $midnight-blue;
-}
-/* hero section */
-
 body:nth-child(2) {
    margin-top: 100px;
 }
 
+a, button {
+   cursor: pointer;
+}
+
+a:hover {
+   color: $black;
+}
+
+/* hero section */
 .hero-section {
    .parent {
       margin-bottom: 50px;
@@ -31,14 +35,14 @@ body:nth-child(2) {
          // background-color: blueviolet;
          width: 350px;
          font-size: 14px;
-         color: $midnight-blue-l;
+         color: $gray;
          padding: 20px;
          right: -10px;
          bottom: -10px;
 
          .testimonial__author {
             margin-top: 30px;
-            color: $midnight-blue;
+            color: $black;
          }
       }
    }
@@ -55,7 +59,7 @@ body:nth-child(2) {
       }
 
       p {
-         color: $midnight-blue-l;
+         color: $gray;
          margin-bottom: 10px;
       }
 
@@ -67,29 +71,29 @@ body:nth-child(2) {
             border-radius: 7.5px;
 
             &[type="email"], &[type="text"] {
-               border: 1px solid $midnight-blue-l;
+               border: 1px solid $gray;
                width: 300px;
                margin-right: 10px;
                margin-bottom: 10px;
 
                &::-webkit-input-placeholder {
-                  color: $midnight-blue-l;
+                  color: $gray;
                }
 
                &::-moz-placeholder {
-                  color: $midnight-blue-l;
+                  color: $gray;
                }
 
                &:-ms-input-placeholder {
-                  color: $midnight-blue-l;
+                  color: $gray;
                }
 
                &::-ms-input-placeholder {
-                  color: $midnight-blue-l;
+                  color: $gray;
                }
 
                &::placeholder {
-                  color: $midnight-blue-l;
+                  color: $gray;
                }
             }
          }
@@ -120,7 +124,7 @@ body:nth-child(2) {
          p {
             font-size: 80%;
             text-transform: uppercase;
-            color: $midnight-blue;
+            color: $black;
             margin-bottom: 0;
          }
       }
@@ -242,10 +246,10 @@ body:nth-child(2) {
 .steps-card {
    p {
       padding-bottom: 40px;
-      border-left: 1px solid $ribbon-blue;
+      border-left: 1px solid $black;
       padding-left: 47px;
       margin-left: 9px;
-      color: $midnight-blue-l;
+      color: $gray;
    }
    
    .last-step {
@@ -258,7 +262,7 @@ body:nth-child(2) {
       font-weight: bold;
       padding-left: 55px;
       position: relative;
-      color: $midnight-blue;
+      color: $purple;
    }
 
    h4::before {
@@ -266,7 +270,7 @@ body:nth-child(2) {
       position: absolute;
       left: 0;
       top: 5px;
-      color: $ribbon-blue;
+      color: $black;
       font-size: 18px;
       font-weight: 500;
    }
@@ -290,7 +294,7 @@ body:nth-child(2) {
 
 /* security section */
 .security-section {
-   background-color: $ribbon-blue;
+   background-color: $black;
    position: relative;
    overflow: hidden;
    
@@ -332,8 +336,12 @@ body:nth-child(2) {
 
       a {
          text-transform: uppercase;
-         color: $alto;
+         color: $white;
          font-size: 15px;
+
+         &:hover {
+            color: darken($alto, 10%);
+         }
       }
 
    }
@@ -394,12 +402,12 @@ body:nth-child(2) {
          margin-bottom: 0;
          margin-right: 25px;
          font-weight: bold;    
-         color: #aeb9cc;
+         color: $gray;
 
 
          span {
             font-size: 2rem;
-            color: $midnight-blue;
+            color: $black;
          }
       }
       
@@ -427,7 +435,7 @@ body:nth-child(2) {
       }
       
       p {
-         color: #aeb9cc;
+         color: $gray;
          margin-bottom: 40px;
          font-size: 85%;
       }
@@ -435,15 +443,19 @@ body:nth-child(2) {
       a {
          text-transform: uppercase;
          font-weight: bold;
-         color: $ribbon-blue;
+         color: $black;
          font-size: 14px;
+
+         &:hover {
+            color: lighten($black, 20%) !important;
+         }
       }
    }
 }
 
 /* global signup section*/ 
 .signup-section {
-   background-color: $ribbon-blue;
+   background-color: $black;
    color: $white;
    border-radius: 20px;
    padding: 60px 5%;
@@ -499,7 +511,7 @@ body:nth-child(2) {
 
       .submit-button {
          background-color: $white;
-         color: $midnight-blue;
+         color: $purple;
          border: 0;
          font-weight: 600;
          margin-left: 5px;
@@ -530,11 +542,11 @@ body:nth-child(2) {
             margin-bottom: 17.5px;
             
             a {
-               color: $midnight-blue-l;
+               color: $gray;
                font-size: 16px;
 
                &:hover {
-                  color: $midnight-blue;
+                  color: $black;
                }
             }
          }
@@ -546,7 +558,7 @@ body:nth-child(2) {
 .copyright {
    padding: 20px 0;
    border-top: 1px solid $gray-l;
-   color: $midnight-blue-l;
+   color: $gray;
    font-size: 14px;
 }
 
@@ -572,5 +584,6 @@ body:nth-child(2) {
    p {
       font-size: 1.35rem;
       margin: 15px 0 65px;
+      color: $gray;
    }
 }
