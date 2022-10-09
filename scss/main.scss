@@ -4,8 +4,17 @@ body:nth-child(2) {
    margin-top: 100px;
 }
 
-a, button {
+a, button, input[type="submit"] {
    cursor: pointer;
+}
+
+a {
+   text-decoration: none;
+   color: $gray;
+}
+
+ul, li {
+   list-style-type: none;
 }
 
 a:hover {
@@ -518,6 +527,16 @@ a:hover {
          font-size: 16px;
       }
    }
+
+   img {
+      width: 175px;
+   }
+
+   .store__images {
+      display: flex;
+      justify-content: end;
+      gap: 20px;
+   }
 }
 
 /* global footer menu*/ 
@@ -585,5 +604,67 @@ a:hover {
       font-size: 1.35rem;
       margin: 15px 0 65px;
       color: $gray;
+   }
+}
+
+// blog page
+.blog-section {
+   margin-bottom: 50px;
+}
+.blog-header {
+   margin: 20px 0 30px;
+
+   h3 {
+      font-size: 1.65rem;
+      color: $purple;
+      font-weight: bold;
+   }
+
+   p {
+      font-size: 1rem;
+      color: $gray;
+   }
+}
+
+.blog-div {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 30px;
+   gap: 30px;
+}
+
+.blog-card {
+   .blog__image {
+      width: 100%;
+      aspect-ratio: 1/1;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border-radius: 5px;
+      margin-bottom: 10px;
+   }
+
+   .blog__tags {
+      font-size: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 5px;
+      gap: 5px 10px;
+   }
+
+   .blog__title {
+      font-weight: bold;
+      color: $black;
+      font-size: 1.35rem;
+
+      &:hover {
+         color: $purple;
+      }
+   }
+
+   .blog__date {
+      font-size: 14px;
+      color: $gray;
+      margin-top: 10px;
    }
 }

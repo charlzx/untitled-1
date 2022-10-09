@@ -128,8 +128,17 @@ body:nth-child(2) {
   margin-top: 100px;
 }
 
-a, button {
+a, button, input[type=submit] {
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #6a696b;
+}
+
+ul, li {
+  list-style-type: none;
 }
 
 a:hover {
@@ -559,6 +568,14 @@ a:hover {
   margin-left: 5px;
   font-size: 16px;
 }
+.signup-section img {
+  width: 175px;
+}
+.signup-section .store__images {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
 
 /* global footer menu*/
 .footer-menu {
@@ -614,6 +631,60 @@ a:hover {
   font-size: 1.35rem;
   margin: 15px 0 65px;
   color: #6a696b;
+}
+
+.blog-section {
+  margin-bottom: 50px;
+}
+
+.blog-header {
+  margin: 20px 0 30px;
+}
+.blog-header h3 {
+  font-size: 1.65rem;
+  color: #5524e0;
+  font-weight: bold;
+}
+.blog-header p {
+  font-size: 1rem;
+  color: #6a696b;
+}
+
+.blog-div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  gap: 30px;
+}
+
+.blog-card .blog__image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.blog-card .blog__tags {
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+  gap: 5px 10px;
+}
+.blog-card .blog__title {
+  font-weight: bold;
+  color: #282a2b;
+  font-size: 1.35rem;
+}
+.blog-card .blog__title:hover {
+  color: #5524e0;
+}
+.blog-card .blog__date {
+  font-size: 14px;
+  color: #6a696b;
+  margin-top: 10px;
 }
 
 @media all and (min-width: 1400px) {
@@ -725,12 +796,18 @@ a:hover {
   .signup-section h2 {
     font-size: 2.15rem;
   }
+
+  .blog-card .blog__title {
+    font-size: 1.25rem;
+  }
 }
 @media all and (max-width: 875px) {
-  .footer-menu {
+  .blog-section .parent {
+    padding: 0 5%;
+  }
+
+  .blog-div {
     grid-template-columns: 1fr 1fr;
-    grid-gap: 30px 10px;
-    gap: 30px 10px;
   }
 }
 @media all and (max-width: 768px) {
@@ -790,6 +867,12 @@ a:hover {
     padding: 0;
   }
 
+  .footer-menu {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px 10px;
+    gap: 30px 10px;
+  }
+
   #error-section br {
     display: none;
   }
@@ -803,6 +886,13 @@ a:hover {
     margin: 15px 0 30px;
   }
 }
+@media all and (max-width: 650px) {
+  .footer-menu {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px 10px;
+    gap: 30px 10px;
+  }
+}
 @media all and (max-width: 600px) {
   .hero-section .hero-info form {
     display: none;
@@ -811,6 +901,10 @@ a:hover {
     display: flex;
     grid-gap: 15px;
     gap: 15px;
+  }
+
+  .blog-div {
+    grid-template-columns: 1fr;
   }
 }
 @media all and (max-width: 500px) {
@@ -843,5 +937,9 @@ a:hover {
   }
   .footer-menu .menu-list ul li a {
     font-size: 14.5px;
+  }
+
+  .blog-section .parent {
+    padding: 0;
   }
 }
