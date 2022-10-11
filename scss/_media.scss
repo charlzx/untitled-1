@@ -48,10 +48,10 @@
 }
 
 @media all and (max-width: 1024px) {
-   body:nth-child(2) {
-      margin-top: 75px;
+   .mt {
+      margin-top: 75px !important;
    }
-   
+
    .hero-section {
       .parent {
          grid-template-columns: 1fr;
@@ -144,7 +144,7 @@
 
 @media all and (max-width: 875px) {
    .blog-section .parent {
-      padding: 0 5%;
+      padding: 0;
    }
 
    .blog-div {
@@ -169,8 +169,8 @@
    .props-section {
       .parent {
          grid-template-columns: 1fr;
-         padding-left: 5%;
-         padding-right: 5%;
+         padding-left: 0;
+         padding-right: 0;
          gap: 50px;
       }
 

@@ -1,1 +1,197 @@
-@import"http://fonts.cdnfonts.com/css/br-firma";@font-face{font-family:"BR Firma sub";src:url("../fonts/BR Firma.woff2") format("woff2"),url("../fonts/BR Firma.woff") format("woff");font-weight:normal;font-style:normal}*{font-family:"BR Firma","BR Firma sub",sans-serif}body{background-color:#ece0f181}a,button{cursor:pointer}a:hover{color:#6a696b !important}body>div{padding:80px 60px 20px 60px;color:rgba(94,92,92,.849)}body>div .logo{margin-bottom:50px}body>div .login-section{display:grid;grid-template-columns:1fr 1fr;grid-gap:5%;gap:5%}body>div .login-section .info h3{font-size:3rem;font-weight:bold;color:#5524e0;line-height:3rem;margin-bottom:15px}body>div .login-section .info h3 .line-break{display:none}body>div .login-section .info p{font-size:1.85rem;font-weight:bold;color:#282a2b}body>div .login-section .card-section{background-color:#fff;border:1px solid #b7b6b7;box-shadow:1px 15px 18px rgba(0,0,0,.03);border-radius:7.5px;padding:40px 40px 10px}body>div .login-section .card-section>div{margin-bottom:30px;position:relative}body>div .login-section .card-section>div label{font-size:12px;color:#282a2b;background-color:#fff;padding:0 3.5px;position:absolute;top:-8.5px;left:10px;transition:display 1s linear;display:none}body>div .login-section .card-section>div input{width:100%;padding:12.5px 15px;font-size:14px;border-radius:3.5px;color:#6a696b;border:1px solid #b7b6b7;transition:border-color .3s ease-in,color 1s linear}body>div .login-section .card-section>div input:focus{border:1px solid #282a2b}body>div .login-section .card-section>div input:focus::placeholder{color:transparent}body>div .login-section .card-section .more__content{font-size:15px}body>div .login-section .card-section .more__content a{font-weight:bold;color:#5524e0;text-decoration:none}body>div .login-section .card-section .more__content img{width:16px}body>div .login-section .card-section .register{display:flex;align-items:center;justify-content:space-between;margin-top:10px}body>div .help{display:flex;align-items:center;justify-content:space-between;font-size:14px;margin-top:30px}body>div .help img{width:20px;margin-right:10px}body>div .help>p{display:flex;align-items:center;color:rgba(94,92,92,.849)}body>div .help a{font-weight:bold;color:#282a2b;text-decoration:none}button{color:#fff;background-color:#282a2b;border:1px solid #282a2b;padding:10px 25px;box-shadow:0px 18px 23px -7px rgba(0,0,0,.082);border-radius:7.5px;transition:.1s ease-in-out}button:active{transform:scale(0.95)}@media all and (min-width: 1400px){body>div{width:1285px;margin:0 auto}}@media all and (max-width: 1070px){body>div .login-section{grid-template-columns:1fr;grid-gap:50px;gap:50px}}@media all and (max-width: 600px){body>div{padding:30px 5% 70px}body>div .login-section{grid-gap:30px;gap:30px}body>div .login-section .card-section{padding:20px 20px 0}body>div .login-section .info h3{font-size:2.35rem;line-height:2.35rem}body>div .login-section .info p{font-style:1.45rem}body>div .login-section .card-section .register{display:block}body>div .login-section .card-section .register button{margin-top:20px}}@media all and (max-width: 450px){body>div .login-section .info h3 .line-break{display:block}body>div .login-section .card-section{padding:20px 20px 0}body>div .login-section .card-section>div{margin-bottom:20px}body>div .help{display:block}body>div .help p{margin-bottom:10px}}
+@import url("http://fonts.cdnfonts.com/css/br-firma");
+@font-face {
+  font-family: "BR Firma sub";
+  src: url("../fonts/BR Firma.woff2") format("woff2"), url("../fonts/BR Firma.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "BR Firma", "BR Firma sub", sans-serif;
+}
+
+body {
+  background-color: #ece0f181;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+a:hover {
+  color: #6a696b !important;
+}
+
+body > div {
+  padding: 80px 60px 20px 60px;
+  color: rgba(94, 92, 92, 0.849);
+}
+body > div .logo {
+  margin-bottom: 50px;
+}
+body > div .login-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5%;
+  gap: 5%;
+}
+body > div .login-section .info h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #5524e0;
+  line-height: 3rem;
+  margin-bottom: 15px;
+}
+body > div .login-section .info h3 .line-break {
+  display: none;
+}
+body > div .login-section .info p {
+  font-size: 1.85rem;
+  font-weight: bold;
+  color: #282a2b;
+}
+body > div .login-section .card-section {
+  background-color: #ffffff;
+  border: 1px solid #b7b6b7;
+  box-shadow: 1px 15px 18px rgba(0, 0, 0, 0.03);
+  border-radius: 7.5px;
+  padding: 40px 40px 10px;
+}
+body > div .login-section .card-section > div {
+  margin-bottom: 30px;
+  position: relative;
+}
+body > div .login-section .card-section > div label {
+  font-size: 12px;
+  color: #282a2b;
+  background-color: #ffffff;
+  padding: 0 3.5px;
+  position: absolute;
+  top: -8.5px;
+  left: 10px;
+  transition: display 1s linear;
+  display: none;
+}
+body > div .login-section .card-section > div input {
+  width: 100%;
+  padding: 12.5px 15px;
+  font-size: 14px;
+  border-radius: 3.5px;
+  color: #6a696b;
+  border: 1px solid #b7b6b7;
+  transition: border-color 0.3s ease-in, color 1s linear;
+}
+body > div .login-section .card-section > div input:focus {
+  border: 1px solid #282a2b;
+}
+body > div .login-section .card-section > div input:focus::placeholder {
+  color: transparent;
+}
+body > div .login-section .card-section .more__content {
+  font-size: 15px;
+}
+body > div .login-section .card-section .more__content a {
+  font-weight: bold;
+  color: #5524e0;
+  text-decoration: none;
+}
+body > div .login-section .card-section .more__content img {
+  width: 16px;
+}
+body > div .login-section .card-section .register {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+body > div .help {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 30px;
+}
+body > div .help img {
+  width: 20px;
+  margin-right: 10px;
+}
+body > div .help > p {
+  display: flex;
+  align-items: center;
+  color: rgba(94, 92, 92, 0.849);
+}
+body > div .help a {
+  font-weight: bold;
+  color: #282a2b;
+  text-decoration: none;
+}
+
+button {
+  color: #ffffff;
+  background-color: #282a2b;
+  border: 1px solid #282a2b;
+  padding: 10px 25px;
+  box-shadow: 0px 18px 23px -7px rgba(0, 0, 0, 0.082);
+  border-radius: 7.5px;
+  transition: 0.1s ease-in-out;
+}
+button:active {
+  transform: scale(0.95);
+}
+
+@media all and (min-width: 1400px) {
+  body > div {
+    width: 1285px;
+    margin: 0 auto;
+  }
+}
+@media all and (max-width: 1070px) {
+  body > div .login-section {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+    gap: 50px;
+  }
+}
+@media all and (max-width: 600px) {
+  body > div {
+    padding: 30px 5% 70px;
+  }
+  body > div .login-section {
+    grid-gap: 30px;
+    gap: 30px;
+  }
+  body > div .login-section .card-section {
+    padding: 20px 20px 0;
+  }
+  body > div .login-section .info h3 {
+    font-size: 2.35rem;
+    line-height: 2.35rem;
+  }
+  body > div .login-section .info p {
+    font-style: 1.45rem;
+  }
+  body > div .login-section .card-section .register {
+    display: block;
+  }
+  body > div .login-section .card-section .register button {
+    margin-top: 20px;
+  }
+}
+@media all and (max-width: 450px) {
+  body > div .login-section .info h3 .line-break {
+    display: block;
+  }
+  body > div .login-section .card-section {
+    padding: 20px 20px 0;
+  }
+  body > div .login-section .card-section > div {
+    margin-bottom: 20px;
+  }
+  body > div .help {
+    display: block;
+  }
+  body > div .help p {
+    margin-bottom: 10px;
+  }
+}
+
+/*# sourceMappingURL=login.css.map */
