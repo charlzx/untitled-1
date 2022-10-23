@@ -20,12 +20,12 @@
    <link rel="stylesheet" href="css/style.css">
 
 	<style>
+		/* tweak for signup-section in global footer */
 		@media all and (max-width:768px){.signup-section{text-align:center}.signup-section img{width:140px}.signup-section .store__images{justify-content:center}}@media all and (max-width:400px){.signup-section .store__images{flex-direction:column;align-items:center;gap:10px}}
-		
 	</style>
 </head>
 <body>
-   <!-- navbar component -->
+   <!-- navbar component (header-min.css) -->
    <nav class="navbar navbar-expand-lg navbar-light bg-white">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
@@ -58,6 +58,7 @@
 		</div>
 	</nav>
 
+	<!-- blog section -->
 	<div class="blog-section">
 		<div class="parent">
 			<div class="blog-header">
@@ -139,6 +140,7 @@
 		</div>
 	</div>
 
+	<!-- global footer section -->
 	<footer>
 		<div class="parent">
 			<div class="signup-section">
@@ -209,6 +211,7 @@
 		</div>
 	</footer>
 
+	<!-- date for footer copyright -->
 	<script>
 		let year = document.querySelector('#year');
 		let thisYear = new Date().getFullYear()
