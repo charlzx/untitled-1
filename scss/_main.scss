@@ -26,7 +26,7 @@ a:hover {
    .parent {
       margin-bottom: 50px;
       display: grid;
-      grid-template-columns: .75fr 1fr;
+      grid-template-columns: 1fr 1fr;
       grid-gap: 5%; gap: 5%;
    }
 
@@ -35,7 +35,7 @@ a:hover {
       overflow: hidden;
 
       img {
-         width: 95%;
+         width: 90%;
       }
 
       .testimonial__content {
@@ -665,5 +665,239 @@ a:hover {
       font-size: 14px;
       color: $gray;
       margin-top: 10px;
+   }
+}
+
+// hero section (with one side)
+.hero-section-s {
+   display: flex;
+   align-items: center;
+   height: 700px;
+
+   background-repeat: no-repeat !important;
+   background-position: 48vw 15vh !important;
+   background-size: 79% !important;
+   
+
+   h1 {
+      font-size: 3.75rem;
+      font-weight: bold;
+      letter-spacing: -2.5px;
+      margin-bottom: 30px;
+   }
+
+   p {
+      color: $gray;
+      margin-bottom: 30px;
+      max-width: 500px;
+   }
+}
+
+// toolkit section
+.toolkit-section {
+   background-image: url(/images/patterns/plan/ptn-01.svg);
+   background-repeat: no-repeat;
+   background-position: 800px top;
+   background-size: contain;
+
+   color: $gray;
+   text-align: center;
+   
+   .parent {
+      padding: 50px 0;
+   }
+
+   h1, h2, h3, h4, h5, h6 {
+      color: $black;
+      font-weight: bold;
+      margin-bottom: 20px;
+   }
+
+   h2 {
+      font-size: 3rem;
+   }
+
+   .toolkit-hero {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 50px 0;
+   }
+
+   .toolkit-main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 50px;
+      gap: 50px;
+      text-align: left;
+
+      & > div {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+
+         img {
+            width: 100%;
+         }
+      }
+   }
+
+   hr {
+      margin: 20px 0;
+   }
+}
+.toolkit-card {
+   padding-top: 10px;
+   padding-bottom: 30px;
+
+   h3 {
+      font-size: 2rem;
+   }
+
+   a {
+      font-size: 14px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+   }
+}
+
+// story section
+.story-section {
+   padding: 0;
+
+   .parent {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      
+      // & > div:first-child {
+      //    padding-left: 20px;
+      // }
+
+      // & > div:last-child {
+      //    padding-right: 20px;
+      // }
+   }
+
+   & > div > div {
+      padding: 50px 0;
+   }
+
+   .story-image {
+      padding: 0;
+      overflow: hidden;
+
+      img {
+         width: 100%;
+         height: 100%;    
+         object-fit: cover;
+      }
+   }
+
+   .story-content {
+      padding-left: 30px;
+      padding-right: 30px;
+
+      h2 {
+         color: $black;
+         text-align: left;
+      }
+
+      p {
+         color: $gray;
+         font-weight: bold;
+
+         span {
+            font-size: 80%;
+            color: lighten($black, 40%);
+         }
+      }
+
+      h2, p {
+         max-width: 550px;
+      }
+   }
+}
+
+// accordion section
+.accordion-section {
+   background-color: #f4f8fc;
+   
+
+   .parent {
+      padding: 60px 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      grid-gap: 20px;
+   }
+
+   .accordion-hero {
+      position: relative;
+      min-height: 550px;
+
+      h1 {
+         font-size: 2.35rem;
+         font-weight: bold;
+      }
+
+      img {
+         width: 100%;
+         position: absolute;
+         bottom: 0;
+         transform: scale(.8) translateY(20%);
+      }
+   }
+}
+
+// accordion buttons
+.accordion-button::after {
+   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+   transform: scale(.7) !important;
+}
+.accordion-button:not(.collapsed)::after {
+   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.accordion {
+   border: 0;
+   display: flex;
+   flex-direction: column;
+   grid-gap: 30px;
+   gap: 30px;
+
+   .accordion-item {
+      background-color: $white;
+      border-radius: 10px;
+      box-shadow: 0px 16px 37px -6px rgba(139, 138, 138, 0.1);
+
+      .accordion-button {
+         border: 0;
+         outline: 0;
+         padding-top: 30px;
+         padding-bottom: 30px;
+         color: $black;
+         font-weight: bold;
+         border-radius: 10px 10px 0 0;
+
+         &:not(.collapsed) {
+            color: $gray;
+            background-color: $white;
+        }
+
+         &:focus {
+            border-color: transparent;
+            box-shadow: none;
+         }
+      }
+
+      .card-body {
+         color: $black;
+         padding: 0 20px 20px;
+      }
+
+      .accordion-collapse {
+         border: 0;
+      }
    }
 }

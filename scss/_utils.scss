@@ -51,6 +51,15 @@ body {
 .bg-whisper {
    background-color: #f5f6fa;
 }
+.bg-purp {
+   background-color: lighten($purple, 42.5%) !important; 
+}
+.bg-white {
+   background-color: $white !important;
+}
+.bg-water {
+   background-color: #f4f8fc !important;
+}
 
 :where(.header-card, .bg-blue, .bg-zircon, .bg-pattern, .bg-seashell, .bg-whisper, .bg-lavender) {
    h2 {
@@ -109,13 +118,18 @@ body {
 }
 
 .submit-button {
-   color: #ffffff;
+   color: $white;
     background-color: $black;
     border: 1px solid $black;
     padding: 10px 20px;
     box-shadow: 0px 18px 23px -7px rgba(56, 55, 55, 0.16);
     border-radius: 7.5px;
 }
+.submit-button:hover {
+   color: $white;
+}
+// .submit-button:hover {
+// }
 
 .left-arrow {
    display: flex;
