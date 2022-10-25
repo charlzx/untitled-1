@@ -43,6 +43,10 @@ nav {
 }
 
 @media all and (min-width: 1100px) {
+  .navbar {
+    padding-top: 20px;
+  }
+
   body > div, .navbar, body > footer {
     padding-left: 60px !important;
     padding-right: 60px !important;
@@ -100,15 +104,6 @@ body > div, .navbar, body > footer {
 }
 
 @media all and (max-width: 991px) {
-  .navbar > .container-fluid .navbar-brand {
-    margin-left: 40px;
-  }
-  .navbar > .container-fluid .navbar-toggler {
-    position: absolute;
-    left: 20px;
-    top: 6.5px;
-  }
-
   #navbar-two {
     width: 100%;
     display: flex;
