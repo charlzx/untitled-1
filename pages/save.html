@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Save</title>
+
+	<!-- css reset -->
+   <link rel="stylesheet" href="../css/reset.css">
+   <!-- bootstrap 5 for navbar -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+	<!-- fontawesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- css animations -->
+   <link rel="stylesheet" href="../css/animate.css">
+	<!-- css for navbar -->
+   <link rel="stylesheet" href="../css/header.css">
+	<!-- css for accordion -->
+	<link rel="stylesheet" href="../css/accordion.css">
+
+   <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+   
+   <!-- navbar component -->
+   <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="../index.html"><img src="../images/logo.png" alt="logo"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="main_nav">
+
+				<a class="navbar-brand" href="#"><img src="../images/logo.png" alt="logo" id="navbar-logo2"></a>
+
+				<button class="navbar-toggler navbar-toggler2" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown">
+						<a class="nav-link" href="#" data-bs-toggle="dropdown"> Personal <i class="fa-solid fa-chevron-down"></i></a>
+						<div class="dropdown-menu dropdown-large nav-menu animate__animated animate__fadeIn">
+							<section>
+								<a href="#">
+									<img src="../images/header/plan.svg" alt="">
+									<div>
+										<h3>Plan</h3>
+										<p>Access financial tools & guides</p>
+									</div>
+								</a>
+	
+								<a href="#">
+									<img src="../images/header/save.svg" alt="">
+									<div>
+										<h3>Save</h3>
+										<p>Earn better interest than your bank</p>
+									</div>
+								</a>
+	
+								<a href="#">
+									<img src="../images/header/invest.svg" alt="">
+									<div>
+										<h3>Invest</h3>
+										<p>Build a global portfolio in one app</p>
+									</div>
+								</a>
+	
+								<a href="#">
+									<img src="../images/header/stash.svg" alt="">
+									<div>
+										<h3>Get Stash</h3>
+										<p>A digital wallet for everything</p>
+									</div>
+								</a>
+							</section>
+							<section>
+								<div>
+									<div>
+										<h3>Growth Tool</h3>
+										<p class="animate__animated animate__fadeInUp">
+											<a href="#">Estimate your interests</a>
+										</p>
+										<p class="animate__animated animate__fadeInUp">
+											<a href="#">Know your risks appetite</a>
+										</p>
+									</div>
+								</div>
+							</section>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link" href="#" data-bs-toggle="dropdown"> Business <i class="fa-solid fa-chevron-down"></i></a>
+						<div class="dropdown-menu dropdown-large nav-menu animate__animated animate__fadeIn">
+							<section class="animate__animated animate__fadeInUp">
+								<a href="#">
+									<img src="../images/header/sprout.svg" alt="">
+									<div>
+										<h3>Sprout</h3>
+										<p>Put your business idle cash to work</p>
+									</div>
+								</a>
+							</section>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link" href="#" data-bs-toggle="dropdown"> Developer <i class="fa-solid fa-chevron-down"></i></a>
+						<div class="dropdown-menu dropdown-large nav-menu animate__animated animate__fadeIn">
+							<section>
+								<a href="#">
+									<img src="../images/header/embed.svg" alt="">
+									<div>
+										<h3>Embed</h3>
+										<p>Offer investments services in your app</p>
+									</div>
+								</a>
+								<a href="#">
+									<img src="../images/header/docs.svg" alt="">
+									<div>
+										<h3>Docs</h3>
+										<p>Read how to integrate the Embed API</p>
+									</div>
+								</a>
+							</section>
+	
+							<section>
+								<div>
+									<div>
+										<h3>Connect</h3>
+										<p class="animate__animated animate__fadeInUp"><a href="#">Join Embed on Slack</a></p>
+									</div>
+								</div>
+							</section>
+						</div>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="#"> Learn </a></li>
+				</ul>
+				<ul class="navbar-nav ms-auto" id="navbar-content">
+					<div id="navbar-two">
+						<a href="login.html" class="login">Log In</a>
+						<a href="signup.html" class="signup">Sign Up For Free</a>
+					</div>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+   <!-- hero section (with one side) -->
+   <div class="hero-section-s bg-white" style="background: url('../images/patterns/save-money-online.svg');">
+		<div class="parent">
+			<h1>
+				Get on the right <br>
+            side of saving
+			</h1>
+			<p>Saving can be much more than storing money. Automate your savings and earn awesome returns. No penalties. No fees. Absolutely free.</p>
+			<a class="submit-button" href="#">Get Started Now</a>
+		</div>
+   </div>
+
+	<!-- toolkit section -->
+   <div class="toolkit-section bg-water">
+		<div class="parent">
+			<div class="toolkit-hero">
+            <h2>Save money on your own terms</h2>
+            <p>With just one account, you can save in multiple different ways. How about that?</p> 	
+         </div>
+         
+         <div class="grid-card">
+            <div class="card">
+               <div class="card-image">
+                  <img src="">
+               </div>
+               <div class="card-content">
+                  <h4>Regular Savings</h4>
+                  <p>
+							Save money on your terms for a minimum of 3 months. 
+							We’ll reward your discipline with juicy returns.
+						</p>
+               </div>
+            </div>
+            <div class="card">
+               <div class="card-image"></div>
+               <div class="card-content">
+                  <h4>Life Goals</h4>
+                  <p>
+							Long-term savings for life’s important goals. 
+							Minimum period of 1 year, with amazing returns.
+						</p>
+               </div>
+            </div>
+            <div class="card">
+               <div class="card-image"></div>
+               <div class="card-content">
+                  <h4>Halal Savings</h4>
+                  <p>
+							Save money with or without automation, free of riba, absolutely interest-free.
+							Suitable for muslims who do not want interests.
+						</p>
+               </div>
+            </div>
+            <div class="card">
+               <div class="card-image"></div>
+               <div class="card-content">
+                  <h4>Saving Circles</h4>
+                  <p>Set targets and save together with others to meet them. Juicy returns await you.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+	<!-- <div class="hero-section-t">
+		<div class="parent">
+			<div class="hero-text"></div>
+			<div class="hero-image"></div>
+		</div>
+	</div> -->
+
+	<div class="hero-section hero-section-mobile bg-water">
+		<div class="parent" style="margin-bottom: 0;">
+			<section class="hero-info">
+				<h3 style="margin-bottom: 30px;">
+					Better interest rates than your bank
+				</h3>
+				<p style="margin-bottom: 30px;">Our interest rates will get your bank account jealous.</p>
+
+				<a href="#" class="left-arrow">Get Started <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" svg-inline="" role="presentation" focusable="false" tabindex="-1"><path d="M21.31 14.484L9.602 26.808a.627.627 0 01-.912-.009.71.71 0 01-.007-.96L19.93 14 8.683 2.16a.71.71 0 01.007-.96.627.627 0 01.912-.008L21.31 13.516a.71.71 0 010 .968z"></path></svg></a>
+			</section>
+			
+			<section class="testimonial">
+				<img src="../images/others/mockup-cowrywise-savings-app.png" alt="">
+			</section>
+		</div>
+	</div>
+
+	<div class="hero-section hero-section-mobile bg-white" style="padding-top: 50px; padding-bottom: 40px;">
+		<div class="parent" style="margin-bottom: 0; align-items: center;">
+			<section class="testimonial" style="border-radius: 10px; order: 1;">
+				<img src="../images/others/group-savings.jpg" alt="" style="border-radius: 10px; width: 100%; margin-bottom: 20px;">
+			</section>
+
+			<section class="hero-info" style="padding-top: 0; order: 2;">
+				<h3 style="margin-bottom: 20px;">
+					What's better than one billionaire? A Circle
+				</h3>
+				<p style="margin-bottom: 30px;">Hit financial goals quicker and stronger by saving with friends with the help of some competition.</p>
+
+				<a href="#" class="submit-button">Join a circle now</a>
+			</section>
+		</div>
+	</div>
+
+	<div class="hero-section hero-section-mobile bg-white" style="padding-top: 20px; padding-bottom: 20px;">
+		<div class="parent" style="margin-bottom: 0; align-items: center;">
+			<section class="hero-info order-2" style="padding-top: 0;">
+				<h3 style="margin-bottom: 20px;">
+					Save according to your values
+				</h3>
+				<p style="margin-bottom: 30px;">Our halal savings plan is a purposeful plan built to comply with the islamic law, absolutely interest-free.</p>
+			</section>
+
+			<section class="testimonial order-1" style="border-radius: 10px;">
+				<img src="../images/others/yinka-testimonial.jpg" alt="" style="border-radius: 10px; width: 100%; margin-bottom: 20px;">
+			</section>
+		</div>
+	</div>
+
+	<!-- story section -->
+	<div class="story-section">
+		<div class="parent">
+			<div class="story-image">
+				<img src="../images/others/wura-testimonial.jpg" alt="">
+			</div>
+			<div class="story-content bg-pattern">
+				<h2>
+					<q>
+						I probably didn't fully understand the power of small steps leading to big strides till I started saving with Cowrywise.
+						The first laptop I bought, myself, was funded by the savings I built one step at a time with Cowrywise, the discipline made things easier.
+					</q>
+				</h2>
+				<p>- Wuraola Kayode, <span>Little saving steps.</span></p>
+			</div>
+		</div>
+	</div>
+   
+	<!-- global footer section -->
+	<footer>
+		<div class="parent">
+			<div class="review-section">
+				<div class="review-card">
+					<div class="review-rating">
+						<p><span>4.4</span>/5</p>
+						<img src="../images/rating.svg" class="rating__image" alt="">
+						<img src="../images/playstore.svg" class="store__image" alt="">
+					</div>
+	
+					<div class="review-comment">
+						<h4>Available on the Play Store</h4>
+						<p>
+							“User interface is fantastic, deposits and withdrawals flawless and fast. I wish I had discovered this years ago, would have been a millionaire by now” 
+							<br> - Obiora, Nov 2021
+						</p>
+						<a href="" class="left-arrow">download now <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" svg-inline="" role="presentation" focusable="false" tabindex="-1"><path d="M21.31 14.484L9.602 26.808a.627.627 0 01-.912-.009.71.71 0 01-.007-.96L19.93 14 8.683 2.16a.71.71 0 01.007-.96.627.627 0 01.912-.008L21.31 13.516a.71.71 0 010 .968z"></path></svg></a>
+					</div>
+				</div>
+	
+				<div class="review-card">
+					<div class="review-rating">
+						<p><span>4.5</span>/5</p>
+						<img src="../images/rating.svg" class="rating__image" alt="">
+						<img src="../images/appstore.svg" class="store__image" alt="">
+					</div>
+	
+					<div class="review-comment">
+						<h4>Available on the App Store</h4>
+						<p>
+							“I just don't know what to say about this app all i know is that it's awesome, it's been 2 years plus and I haven't had a reason to complain.” 
+							<br> - Henrietta, December 2021
+						</p>
+						<a href="" class="left-arrow">download now <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" svg-inline="" role="presentation" focusable="false" tabindex="-1"><path d="M21.31 14.484L9.602 26.808a.627.627 0 01-.912-.009.71.71 0 01-.007-.96L19.93 14 8.683 2.16a.71.71 0 01.007-.96.627.627 0 01.912-.008L21.31 13.516a.71.71 0 010 .968z"></path></svg></a>
+					</div>
+				</div>
+			</div>
+		
+			<div class="signup-section">
+				<h2>
+					Sign up for free. <br>
+					Start investing today.
+				</h2>
+	
+				<form action="">
+					<input type="email" placeholder="Your email..." required>
+					<input type="submit" value="Sign Up For Free" class="submit-button">
+				</form>
+			</div>
+			
+			<div class="footer-menu">
+				<div class="menu-list">
+					<h3>Company</h3>
+					<ul>
+						<li><a href="">About Us</a></li>
+						<li><a href="">Press</a></li>
+						<li><a href="">Careers</a></li>
+						<li><a href="">Ambassadors</a></li>
+						<li><a href="">Privacy</a></li>
+						<li><a href="">Terms</a></li>
+					</ul>
+				</div>
+				
+				<div class="menu-list">
+					<h3>Product</h3>
+					<ul>
+						<li><a href="">Saving Plans</a></li>
+						<li><a href="">Investment Plans</a></li>
+						<li><a href="">Mutual Funds</a></li>
+						<li><a href="">Stash</a></li>
+						<li><a href="">Embed API</a></li>
+						<li><a href="">Sprout</a></li>
+						<li><a href="">Circles</a></li>
+						<li><a href="">Halal</a></li>
+						<li><a href="">Got a suggestion?</a></li>
+					</ul>
+				</div>
+	
+				<div class="menu-list">
+					<h3>Resources</h3>
+					<ul>
+						<li><a href="">Customer Stories</a></li>
+						<li><a href="">Media</a></li>
+						<li><a href="">FAQs</a></li>
+						<li><a href="">Security</a></li>
+						<li><a href="">Estimate your Interest</a></li>
+						<li><a href="">Plan Education</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="">Help Center</a></li>
+					</ul>
+				</div>
+	
+				<div class="menu-list">
+					<h3>Contact</h3>
+					<ul>
+						<li><a href="mailto:">support@cowrywise.com</a></li>
+					</ul>
+				</div>
+			</div>
+	
+			<div class="copyright">
+				<p>&copy; <span id="year"></span> Cowrywise Financial Technology. All rights reserved. </p>
+			</div>
+		</div>
+	</footer>
+</body>

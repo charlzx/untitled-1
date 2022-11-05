@@ -41,7 +41,6 @@ a:hover {
       .testimonial__content {
          position: absolute;
          background-color: $white;
-         // background-color: blueviolet;
          width: 350px;
          font-size: 14px;
          color: $gray;
@@ -61,15 +60,33 @@ a:hover {
 
       h1 {
          font-size: 4.75rem;
-         font-weight: bold;
          letter-spacing: -5px;
-         line-height: 70px;
+      }
+
+      h3 {
+         font-size: 2.85rem;
+      }
+
+      h1 , h3 {   
+         line-height: 100%;
          margin-bottom: 20px;
+         font-weight: bold;
       }
 
       p {
          color: $gray;
          margin-bottom: 10px;
+      }
+
+      a {
+         font-weight: bold;
+         color: $gray;
+         font-size: 14px;
+         text-transform: uppercase;
+      }
+
+      a.submit-button {
+         color: $white;
       }
 
       form {
@@ -801,6 +818,9 @@ a:hover {
       h2 {
          color: $black;
          text-align: left;
+         line-height: 135%;
+         font-size: 2.45rem;
+         font-weight: bold;
       }
 
       p {
@@ -898,6 +918,40 @@ a:hover {
 
       .accordion-collapse {
          border: 0;
+      }
+   }
+}
+
+.grid-card {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 30px;
+   gap: 30px;
+   padding: 0 7.5%;
+}
+.card {
+   color: $black;
+   text-align: start;
+   background-color: $white;
+   padding: 20px;
+   box-shadow: $shadow;
+   border-radius: 7.5px;
+
+   h1, h2, h3, h4, h5, h6, p {
+      color: $black;
+      margin-bottom: 15px;
+   }
+
+   p { 
+      margin-bottom: 0;
+   }
+
+   .card-image {
+      margin-bottom: 10px;
+
+      img {
+         width: 100px;
+         height: auto;
       }
    }
 }
